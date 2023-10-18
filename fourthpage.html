@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>whathappend?</title>
+<link rel="stylesheet" href="fundoctype.css">
+<script src="script.js"></script> 
+
+<title> in the next life </title>
+</head>
+
+
+<style>
+  audio {
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  audio::-webkit-media-controls-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  video {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    img {
+        position: fixed;
+            top: 12%;
+            left: 10px;
+            width: 900px; 
+            height: 400px;
+    }
+ 
+</style>
+    
+</head>
+
+
+<body>
+
+    <audio id="myAudio" controls autoplay loop>
+          <source src="audiothree.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+
+    
+    <video autoplay muted loop id="myVideo">
+        <source src="thirdfilm.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <a href="feelinmanic.html">what happened?</a> 
+    
+
+    </body>
+    </html>
+

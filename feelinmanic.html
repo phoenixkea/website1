@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>whathappend?</title>
+<link rel="stylesheet" href="fundoctype.css">
+<script src="script.js"></script> 
+
+
+<title> feelin manic </title>
+</head>
+
+<style>
+
+audio {
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  audio::-webkit-media-controls-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+video {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    img {
+        position: absolute;
+            top: 12%;
+            left: 10px;
+            width: 500px; 
+            height: 50px;
+    }
+
+    .train img {
+    position: absolute;
+    top: 500px; 
+    left: 800px;
+    width: 900px; 
+    height: 100px;
+   
+}
+
+.nightpoem{
+position: absolute;
+text-align: right;
+    top: 90px; 
+    left: 800px;
+    width: 900px; 
+    height: 100px;
+    padding: 11px;
+}
+
+
+    
+    </style>
+</head>
+    <body> 
+
+        <audio id="myAudio" controls autoplay loop>
+            <source src="powerline.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+
+        
+        <video autoplay muted loop id="myVideo">
+            <source src="manicfilm.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <img src="feelingmanic.png">
+       
+
+        <div class="train">
+            <img class="overlay" src="train.png" alt="Overlay Image">
+          </div>
+
+
+          <div class="nightpoem">      
+
+            <a href="fourthpage.html">  Do you remember that night? <br>
+               What did you feel?<br>
+               The pressure of existence wasn't true with yOU<br>
+               Let's go away<br>
+               Take drugs and seize the day<br>
+               Stay up all night jaw spun just to express<br>
+               But combress<br>
+               Combress vour emotions<br>
+               Don't let them go<br>
+               It's okay<br>
+               But you'll never know<br>
+               You never got it<br>
+               I tried to teach you<br>
+               You know<br>
+               I'Il hold vour hand<br>
+               And you'll hold mine<br>
+               But my grip was always tighter<br>
+               I bet vou weren't suprised<br>
+               For a long time<br>
+               I would therorise<br>
+               That I'm stupid and these are just emotions that are made from a web of lies<br>
+               A build up of hatred<br>
+               I want to let go<br>
+               But I feel bad for his soul<br>
+               </p>
+                 </a> 
+               </div> 
+          
+
+
+       <h1> 
+         <div class=draggable id=stars draggable=true>✣</div>
+<div class=draggable id=stars draggable=true>Feeling manic, I want to hold this high </div>
+<div class=draggable id=stars draggable=true>That night you looked me in the eye,</div>
+<div class=draggable id=stars draggable=true>You made it feel as if everything alright</div>
+<div class=draggable id=stars draggable=true>But hold on, you gotta think twice</div>
+<div class=draggable id=stars draggable=true>Last time mother looked me in the eyes</div>
+<div class=draggable id=stars draggable=true>She made sure to tell me what's right </div>
+<div class=draggable id=stars draggable=true>But I do wrong</div>
+<div class=draggable id=stars draggable=true>Crave sin, hunt for lust</div>
+<div class=draggable id=stars draggable=true>All because of him</div>
+<div class=draggable id=stars draggable=true>All for that moment; a facade of a peace within</div>
+<div class=draggable id=stars draggable=true>To forget, to feel</div>
+<div class=draggable id=stars draggable=true>To sensualise your pain away through a non-verbal 
+    communicative dystopic language where cravings and desires are met </div>
+<div class=draggable id=stars draggable=true>Embrace me </div>
+<div class=draggable id=stars draggable=true>Let me feel okay</div>
+<div class=draggable id=stars draggable=true>I want the pain to stay </div>
+<div class=draggable id=stars draggable=true>While you pat me with your lustful ways </div>
+<div class=draggable id=stars draggable=true>A kidney for an eye</div>
+<div class=draggable id=stars draggable=true>A truth for a lie </div>
+<div class=draggable id=stars draggable=true>Oh man what happened to my apple pie?</div>
+
+</h1>
+
+<script>
+    let activeElement = null;
+    document.querySelectorAll('.draggable').forEach(item => {
+        item.addEventListener('dragstart', (e) => {
+            activeElement = e.target;
+        });
+        item.addEventListener('dragend', () => {
+            activeElement = null;
+        });
+    });
+    document.addEventListener('dragover', (e) => {
+        e.preventDefault();
+    });
+    document.addEventListener('drop', (e) => {
+        if (activeElement) {
+            event.preventDefault();
+            activeElement.style.left = e.pageX + 'px';
+            activeElement.style.top = e.pageY + 'px';
+        }
+    });
+</script>
+
+
+
+    </body>
+
+
+</html>

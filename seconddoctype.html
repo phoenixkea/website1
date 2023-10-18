@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>cyberthreat</title>
+<link rel="stylesheet" href="fundoctype.css">
+
+<title>eat grass im upset</title>
+<style>
+    body {
+        margin: 0;
+        overflow: hidden;
+    }
+    
+    video {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    img {
+            position: fixed;
+            top: 0%;
+            right: 60px;
+            width: 200px; 
+            height: 1200px;
+        }
+
+
+div.a {
+    position: fixed;
+            top: 28%;
+            right: 270px;
+            width: 900px; 
+            height: 200px;
+            text-align: right;
+            
+        
+            
+} 
+
+  .poem-container {
+    position: absolute;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 5px;
+  }
+  
+  
+div.mothpoem {
+    position: absolute;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 200px;
+    margin-left: 230px;
+    width: 800;
+    height: 20;
+}
+div.mothpoemtwo {
+    position: absolute;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 420px;
+    margin-left: 130px;
+    width: 800;
+    height: 20;
+
+}
+.greatestfear {
+    position: absolute;
+    top: 30px; 
+    left: 500px;
+    width: 50%; 
+    height: 1%;
+   
+}
+
+
+</style>
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
+    <source src="moviegreen.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+
+
+
+<img src="typeone.png">
+
+
+
+<div class="container">
+    <img class="overlay" src="typewriter.png" alt="Overlay Image">
+  </div>
+
+  <div class="greatestfear">
+    <img class="overlay" src="greatestfear.png" alt="Overlay Image">
+  </div>
+
+
+<div class="a"> 
+    <p style="background-color: rgba(249, 1, 1, 0.561);"> 
+
+    hello
+    nice to meet you <br>
+    isnt it wierd that now its just us two?<br>
+    hold my hand<br>
+    I'll walk with you <br>
+    travel along fields getting lost in time,<br>
+    i never want to image that youre not mine.<br>
+    im glad we met <br>
+    what are the chances?<br>
+    who coldve bet? <br>
+    but i choose to believe <br>
+    that its meant to be <br>
+    you an me <br>
+    huddled under the tree.<br>
+    gazing at the stars thinking<br>
+    this is mean to be.<br>
+
+  </p>
+
+</div>
+
+
+<p style="margin-top: 20px; margin-left: 450px;font-size: 24px;">
+    <span style="color:#800101; font-weight: bold;">
+        i think if I were a moth id fly to the brightest star 
+    </span> 
+</p>
+
+
+<div class="mothpoem"> 
+
+    <p> 
+        <b> 
+            <i> 
+    
+        flying high <br>
+        looking back on the glory trees and my lie of a life <br>
+        <p style="color:#800101">despite</p>
+        <p style="color:#800101">i spit</p> 
+        i wanna get out of this world <br>
+        <p style="color:#800101">i quit</p> 
+        follow the only thing you know <br>
+        ill look for the brightest stone and keep it for myself <br>
+        hide it <br>
+        its unknown <br>
+        im out of the atmosphere <br>
+       
+        </i> 
+    </b>
+</p>
+    
+</div>
+
+<div class="mothpoemtwo"> 
+
+    <p> <b> <i> dont worry <br>
+        i know my times here <br>
+        but I did my job <br>
+        and followed what I know<br>
+        your a shooting star <br>
+        about to implode <br>
+        a moth wanting to find a home <br>
+        find my truth <br>
+        whats the reason?<br>
+        no one knows one.<br>
+       </i> </b>
+    </p>
+    
+</div>
+<div class="poem-container" onclick="displayLines()">
+    <div id="line1" style="display:none">the child in me wants to go out and see</div>
+    <div id="line2" style="display:none">see the world and discover</div>
+    <div id="line3" style="display:none">what it means to be me</div>
+    <div id="line4" style="display:none">hold my hand, we'll go out and play</div>
+    <div id="line5" style="display:none">ride along the day</div>
+  </div>
+  
+
+
+<form action="feelinmanic.html">
+
+    <p><label for="w3review">whats your name? tell me about yourself <br>
+        whats your eye colour? <br>
+        stare me down<br>
+        open me up <br> 
+        </label></p>
+    <textarea id="w3review" name="w3review" rows="4" cols="40"> </textarea>
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+  
+  <p>come back to me,, lets be friends!</p>
+
+  <div id="canvasContainer"></div>
+
+  <script>
+    let lineIndex = 1;
+    
+    function displayLines() {
+      const line = document.getElementById(`line${lineIndex}`);
+      if (line) {
+        line.style.display = "block";
+        lineIndex++;
+      }
+    }
+    
+
+    
+</script> 
+<script src="funnydoctype.js"></script> 
+
+</body>
+</html>

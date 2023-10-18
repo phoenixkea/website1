@@ -1,0 +1,113 @@
+
+
+.blinking-text {
+    animation: blink 7s infinite; 
+    position: absolute;
+  top: 10px; 
+  left: 500px;
+  top: 80%; 
+  font-size: 100px;
+    color: rgb(77, 124, 233);
+  }
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.container {
+    position: relative;
+    top: 450px;
+    right: -320px;
+    
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    width: 900px;
+    height: 150px;
+  }
+
+ 
+  .a {
+    position: fixed;
+    top: 70%;
+    right: 700px;
+    width: 900px; 
+    height: 1000px;
+    text-align: right; 
+    display: inline;
+    padding: -20px -20px;
+    opacity: 90px;
+}
+
+
+.a p {
+    background-color: rgba(249, 1, 1, 0.306); 
+    display: inline;
+    padding: -20px -20px;
+    opacity: 90px;
+}
+
+#submitButton {
+    position: absolute;
+    top: -80px;
+}
+
+.greatestfear img {
+  position: fixed;
+  top: 490px; 
+  left: 490px;
+  width: 700px; 
+  height: 50px;
+}
+
+.train img {
+    position: absolute;
+    top: 90px; 
+    left: 100px;
+    width: 9px; 
+    height: 3px;
+   
+}
+
+canvas {
+   mix-blend-mode: screen;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 10;
+   pointer-events: none;
+}
+
+.draggable{
+    color: white;
+    background-color: rgba(249, 1, 1, 0.577); 
+    font-size:medium;
+    font-weight:100;
+    cursor:help
+}
+#stars{
+    font-size:xx-large;
+}
+
+.draggable {
+
+        position: absolute;
+    }
+
+    .word {
+        position: absolute;
+        transition: transform 0.5s;
+    }
+  
+
